@@ -1,10 +1,9 @@
 package echopprof
 
 import (
+	"github.com/labstack/echo/v4"
 	"strings"
 	"testing"
-
-	"github.com/labstack/echo"
 )
 
 func newServer() *echo.Echo {
