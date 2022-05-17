@@ -48,7 +48,7 @@ func TestWrap(t *testing.T) {
 
 // go test github.com/ttys3/echo-pprof/v4 -v -run=TestWrapGroup\$
 func TestWrapGroup(t *testing.T) {
-	for _, prefix := range []string{"/debug"} {
+	for _, prefix := range []string{"/debug/pprof"} {
 		e := newServer()
 		g := e.Group(prefix)
 		WrapGroup(prefix, g)

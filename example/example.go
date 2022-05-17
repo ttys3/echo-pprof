@@ -1,6 +1,9 @@
 package main
 
-import echopprof "github.com/ttys3/echo-pprof/v4"
+import (
+	"github.com/labstack/echo/v4"
+	echopprof "github.com/ttys3/echo-pprof/v4"
+)
 
 func main() {
 	e := echo.New()
