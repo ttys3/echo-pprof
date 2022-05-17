@@ -3,6 +3,7 @@ package main
 import (
 	"github.com/labstack/echo/v4"
 	echopprof "github.com/ttys3/echo-pprof/v4"
+	"log"
 )
 
 func main() {
@@ -21,5 +22,6 @@ func main() {
 	// group := e.Group(prefix)
 	// echopprof.WrapGroup(prefix, group)
 
-	e.Start(":8080")
+	log.Println("pprof URL: http://127.0.0.1:3000/debug/pprof/")
+	log.Fatal(e.Start(":3000"))
 }
